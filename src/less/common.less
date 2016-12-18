@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext');
+
+* {
+  font-family: Lato !important;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+.btn {
+  background: @button-background;
+  color: @white;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  &:focus {
+    color: @white;
+  }
+
+  &.inverted {
+    background: @color4;
+
+    &:hover {
+      background: lighten(@color4, 4%);
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  &:hover {
+    background: lighten(@button-background, 4%);
+    color: lighten(@white, 3%);
+  }
+}
+
+.title {
+  font-size: 3.0rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: @white;
+}

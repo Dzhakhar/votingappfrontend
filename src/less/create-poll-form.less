@@ -1,0 +1,52 @@
+.create-poll-form {
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    max-width: 500px;
+    width: 100%;
+
+    .options, .settings {
+      margin-top: 10px;
+    }
+
+    .control {
+      position: relative;
+
+      &:last-of-type {
+        margin: 0;
+      }
+
+      .icon {
+        position: absolute;
+        right: -30px;
+        top: 5px;
+        cursor: pointer;
+        font-size: @icon-size;
+        display: inline-block;
+        color: @button-background;
+
+        &:hover {
+          color: lighten(@button-background, 4%);
+        }
+      }
+    }
+
+    .add-input-icon {
+      cursor: pointer;
+      color: @color4;
+      font-size: @icon-size;
+      display: inline-block;
+
+      &:hover {
+        color: lighten(@color4, 4%);
+      }
+    }
+  }
+}

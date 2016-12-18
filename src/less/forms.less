@@ -1,0 +1,31 @@
+input[type="text"] {
+  font-size: 1.3rem;
+  padding: @padding;
+  .border-radius;
+  outline: none;
+  height: auto;
+
+  &.main {
+    border: 4px solid @color4;
+  }
+}
+
+label {
+  color: @white !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.dropdown-input {
+  .item {
+    background: @white;
+    padding: @padding;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    &:hover {
+      background: darken(@white, 4%);
+    }
+  }
+}
